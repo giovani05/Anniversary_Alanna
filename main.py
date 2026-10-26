@@ -47,45 +47,55 @@ fig.update_layout(
 )
 
 # MOSTRA DENTRO DO STREAMLIT
-# TITULO
-st.markdown(
-"<h1 style='text-align: center; color: black;'>FELIZ ANIVERSÁRIO AMOR</h1>",
+st.markdown("""
+    <style>
+    .stContainer {
+            border: none !important;
+        }
+    </style>
+    """,
 unsafe_allow_html=True
 )
+with st.container():
+    # TITULO
+    st.markdown(
+    "<h1 style='text-align: center; color: black;'>FELIZ ANIVERSÁRIO AMOR</h1>",
+    unsafe_allow_html=True
+    )
 
-# CORACAO PLOTLY
-st.plotly_chart(fig, use_container_width=True)
+    # CORACAO PLOTLY
+    st.plotly_chart(fig, use_container_width=True)
 
-paragrafo = st.container(border=True)
-paragrafo.markdown(
-"<h2 style='text-align: center; color: black;'>VOCÊ É A DATA DE HOJE? <br>"
-"Porque você é 26/10!!! </h2><br>"
-"<h3 style='text-align: justify; color: black;'>Brincadeiras a parte, eu espero que seu dia tenha sido bom e que você aproveite ainda mais. Você já sabe que te quero muito, mas sempre é um prazer dizer, ou escrever, que te amo. <br>"
-"Lembra de quando a gente estava lá na Lapa com os belgas, e eu te disse para prestar atenção na música de fundo? Pois, é... <br>"
-"Estou ouvindo essa música agora, é a São Gonçalo do Seu Jorge, mas no momento que tocou, era para reparar no início apenas kkk, que fala: <br>"
-"<p style='text-align: center; color: black;'><br>Pretinha, faço tudo pelo nosso amor, <br>" \
-"Faço tudo pelo bem do nosso bem, meu bem, <br>" \
-"A saudade é minha dor, e anda arrasando com o meu coração <br>" \
-"E não duvide que um dia eu te darei o céu, <br>" \
-"O meu amor junto com um anel, pra gente se casar <br>" \
-"No cartório ou na igreja. </p><br> " \
-"Agora está tocando 'Eternamente - Gal Costa', e são 3h46 da madrugada... Eu amo você, minha linda. Sabe de uma coisa? Em busca de palavras para escrever agora, eu busquei aquele código que escrevi para ti uns meses atrás, <br>"
-"e reparei que aindo sinto as mesmas coisas que senti na Quinta da Boa Vista quando você disse que me ama pela primeira vez, e participar de um aniversário seu é algo muito especial. <br>" \
-"Se eu dissesse para o Giovani de janeiro que agora eu estaria namorando (e ainda mais que seria com você, e que seria tão incrível assim), acho que eu me acharia louco... Mas, como Gal Costa diz: <br>"
-"<p style='text-align: center; color: black;'><br>Vou ter sempre você comigo, <br>"
-"Nosso amor eu canto e cantarei, <br>"
-"Você é tudo o que eu amei na vida, <br>"
-"Nunca vou te esquecer, <br>"
-"Só mesmo o tempo pode revelar, <br>"
-"O lado oculto das paixões, "
-"O que se foi e o que não passará, <br>"
-"Inesquecíveis sensações, <br>"
-"Que sempre vão ficar, <br>"
-"Pra nos fazer lembrar, <br>"
-"Dos sonhos, beijos, <br>"
-"Tantos momentos bons. </p><br>"
-"Enfim, eu não sei muito bem o que falar além do que já disse aqui, e to ficando com sono também, pois são mais de 4h da manhã já e ainda estou escrevendo o código, mas te amo e espero que seu dia seja maravilhoso! <br></h3>"
-"<h4 style='text-align: center; color: black;'>Eu amo você, minha linda.<br>"
-"Feliz aniversário! </h4>",
-unsafe_allow_html=True
-)
+    paragrafo = st.container(border=True)
+    paragrafo.markdown(
+    "<h2 style='text-align: center; color: black;'>VOCÊ É A DATA DE HOJE? <br>"
+    "Porque você é 26/10!!! </h2><br>"
+    "<h3 style='text-align: justify; color: black;'>Brincadeiras a parte, eu espero que seu dia tenha sido bom e que você aproveite ainda mais. Você já sabe que te quero muito, mas sempre é um prazer dizer, ou escrever, que te amo. <br>"
+    "Lembra de quando a gente estava lá na Lapa com os belgas, e eu te disse para prestar atenção na música de fundo? Pois, é... <br>"
+    "Estou ouvindo essa música agora, é a São Gonçalo do Seu Jorge, mas no momento que tocou, era para reparar no início apenas kkk, que fala: <br>"
+    "<p style='text-align: center; color: black;'><br>Pretinha, faço tudo pelo nosso amor, <br>" \
+    "Faço tudo pelo bem do nosso bem, meu bem, <br>" \
+    "A saudade é minha dor, e anda arrasando com o meu coração <br>" \
+    "E não duvide que um dia eu te darei o céu, <br>" \
+    "O meu amor junto com um anel, pra gente se casar <br>" \
+    "No cartório ou na igreja. </p><br> " \
+    "Agora está tocando 'Eternamente - Gal Costa', e são 3h46 da madrugada... Eu amo você, minha linda. Sabe de uma coisa? Em busca de palavras para escrever agora, eu busquei aquele código que escrevi para ti uns meses atrás, <br>"
+    "e reparei que aindo sinto as mesmas coisas que senti na Quinta da Boa Vista quando você disse que me ama pela primeira vez, e participar de um aniversário seu é algo muito especial. <br>" \
+    "Se eu dissesse para o Giovani de janeiro que agora eu estaria namorando (e ainda mais que seria com você, e que seria tão incrível assim), acho que eu me acharia louco... Mas, como Gal Costa diz: <br>"
+    "<p style='text-align: center; color: black;'><br>Vou ter sempre você comigo, <br>"
+    "Nosso amor eu canto e cantarei, <br>"
+    "Você é tudo o que eu amei na vida, <br>"
+    "Nunca vou te esquecer, <br>"
+    "Só mesmo o tempo pode revelar, <br>"
+    "O lado oculto das paixões, "
+    "O que se foi e o que não passará, <br>"
+    "Inesquecíveis sensações, <br>"
+    "Que sempre vão ficar, <br>"
+    "Pra nos fazer lembrar, <br>"
+    "Dos sonhos, beijos, <br>"
+    "Tantos momentos bons. </p><br>"
+    "Enfim, eu não sei muito bem o que falar além do que já disse aqui, e to ficando com sono também, pois são mais de 4h da manhã já e ainda estou escrevendo o código, mas te amo e espero que seu dia seja maravilhoso! <br></h3>"
+    "<h4 style='text-align: center; color: black;'>Eu amo você, minha linda.<br>"
+    "Feliz aniversário! </h4>",
+    unsafe_allow_html=True
+    )
