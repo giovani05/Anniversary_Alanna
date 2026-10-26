@@ -58,7 +58,7 @@ st.plotly_chart(fig, use_container_width=True)
 
 paragrafo = st.container(border=True)
 paragrafo.markdown(
-"<h2 style='text-align: justify; color: black;'>VOCÊ É A DATA DE HOJE? <br>"
+"<h2 style='text-align: center; color: black;'>VOCÊ É A DATA DE HOJE? <br>"
 "Porque você é 26/10!!! </h2><br>"
 "<h3 style='text-align: justify; color: black;'>Brincadeiras a parte, eu espero que seu dia tenha sido bom e que você aproveite ainda mais. Você já sabe que te quero muito, mas sempre é um prazer dizer, ou escrever, que te amo. <br>"
 "Lembra de quando a gente estava lá na Lapa com os belgas, e eu te disse para prestar atenção na música de fundo? Pois, é... <br>"
@@ -83,7 +83,7 @@ paragrafo.markdown(
 "Que sempre vão ficar, <br>"
 "Pra nos fazer lembrar, <br>"
 "Dos sonhos, beijos, <br>"
-"Tantos momentos bons. </p><br><br>"
+"Tantos momentos bons. </p><br>"
 "Enfim, eu não sei muito bem o que falar além do que já disse aqui, e to ficando com sono também, pois são mais de 4h da manhã já e ainda estou escrevendo o código, mas te amo e espero que seu dia seja maravilhoso! <br></h3>"
 "<h4 style='text-align: center; color: black;'>Eu amo você, minha linda.<br>"
 "Feliz aniversário! </h4>",
